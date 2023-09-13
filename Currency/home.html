@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="currency.js"></script>
+</head>
+
+<body class="body" style="background: rgb(102, 173, 107);">
+    <div class="nav">
+        <ul id="ul_table">
+            <a href="https://www.codsoft.in/">
+                <li id="home"><b>HOME</b></li>
+            </a>
+            <a href="https://in.linkedin.com/company/codsoft">
+                <li id="about"><b>LINKED IN</b></li>
+            </a>
+            <a href="">
+                <li id="register" style="color:black"><b>Register</b></li>
+            </a>
+            <button id="button1" style="border-radius:5px;
+cursor:pointer;"><li id="login"><b>Login</b></li></button>
+            <li><img src="codsoft.png" alt="error" id="CodSoft"></li>
+        </ul>
+
+    </div>
+    <div class="h1">
+        <h1 style="font-size: 211%;color: white;">CodSoft-Converter</h1><br>
+    </div>
+    <p style="display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px;">Check foreign exchange rate</p>
+    <div id="main">
+        <h style="font-size:30px;color: whitesmoke;margin-top: 3%;"><b>Convert</b></h>
+    </div>
+
+
+
+    <div id="selection1" style="margin-top:-31%;display:flex;">
+
+
+        <select class="currency">
+  <option value="">-Please choose converting currency-</option>
+</select>
+
+        <input type="number" id="input" name="amount" required minlength="1" size="10" />
+
+    </div>
+
+    <div id="icon">
+        <span class="material-symbols-outlined" style="font-size: 273%;
+    margin-top: 1%;
+    margin-left: 14%;
+    color: cornsilk;">
+compare_arrows
+</span></div>
+
+
+    <div id="selection2" style="margin-top:1%;display:flex;">
+        <select class="currency1">
+  <option value="selection2">--Please choose an currency--</option>
+</select>
+        <input type="number" id="output" disabled name="amount" />
+        <span class="material-symbols-outlined">
+    compare_arrows
+    </span>
+    </div>
+
+    <div id="button" style="margin-top:5%">
+        <button id="button2" onclick="convert()">Convert</button>
+    </div>
+</body>
+
+</html>
